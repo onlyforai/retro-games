@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekken 3 Online</title>
+    <style>
+        #game {
+            width: 640px;
+            height: 480px;
+            max-width: 100%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    hello
+    <div style="width:640px;height:480px;max-width:100%">
+        <div id="game"></div>
+    </div>
+    <script type="text/javascript">
+        window.EJS_player = '#game';
+        window.EJS_core = 'psx'; // Use 'beetle-psx' if preferred
+        window.EJS_gameUrl = '/roms/tekken3.bin'; // Path to Tekken 3 ROM
+        window.EJS_biosUrl = '/bios/scph5501.bin'; // Path to US PSX BIOS
+        window.EJS_pathtodata = '/data/'; // Local data folder
+        window.EJS_gameName = 'Tekken 3';
+        window.EJS_startButton = true;
+        // Optional: Netplay for online multiplayer
+        window.EJS_netplayServer = ''; // Set if using WebRTC
+    </script>
+<script src="/src/loader.js"></script></body>
+</html>
